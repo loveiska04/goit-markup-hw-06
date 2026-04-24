@@ -97,6 +97,14 @@ a {
     margin-right: 76px;
 }
 
+@media (min-width: 768px) and (max-width: 1157px) {
+    .address-list {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+    }
+}
+
 .header-logo-span {
     font-weight: 700;
     font-size: 18px;
@@ -177,9 +185,11 @@ a {
     gap: 40px;
 }
 
-@media (min-width: 1158px) {
-    .address-link {
-        font-size: 16px;
+@media (min-width: 768px) and (max-width: 1157px) {
+    .address-list {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
     }
 }
 
@@ -230,7 +240,7 @@ a {
 @media (min-resolution: 2dppx) {
     .main-title-background {
         background-image: linear-gradient(rgba(46, 47, 66, 0.7),
-                rgba(46, 47, 66, 0.7)), url("../images/hero-bg.jpg");
+                rgba(46, 47, 66, 0.7)), url("../images/office-bg.jpg");
     }
 }
 
@@ -778,8 +788,7 @@ a {
 }
 
 .footer-icon-wrapper{
-    margin-right: 0;
-    text-align: left;
+    text-align: center;
 }
 
 .footer-icon-text {
@@ -825,7 +834,8 @@ a {
 }
 
 .footer-subscribe-wrapper {
-    margin-left: auto;
+    margin-left: 0;
+    text-align: center;
 }
 
 .footer-subscribe-text {
@@ -927,8 +937,11 @@ a {
     }
 
     .footer-icon-wrapper {
-        margin-right: 24px;
-        margin-bottom: 0;
+        text-align: left;
+    }
+
+    .footer-subscribe-wrapper {
+        margin-left: auto;
         text-align: left;
     }
 
@@ -1486,7 +1499,7 @@ a {
     pointer-events: auto;
 }
 
-.modal {
+/*.modal {
     position: relative;
     top: 50%;
     left: 50%;
@@ -1498,7 +1511,7 @@ a {
     border-radius: 4px;
     box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12), 0 2px 1px 0 rgba(0, 0, 0, 0.2);
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
+}*/
 
 .modal-title {
     font-family: "Roboto", sans-serif;
