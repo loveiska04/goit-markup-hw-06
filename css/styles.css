@@ -271,7 +271,7 @@ a {
     text-align: center;
     /*margin-bottom: 48px;*/
     margin-bottom: 0;
-    max-width: 320px;
+    max-width: 100%;
     margin-left: auto;
     margin-right: auto;
 }
@@ -280,7 +280,7 @@ a {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 48px;
+    gap: 24px;
 }
 
 .main-title-button {
@@ -316,7 +316,7 @@ a {
         max-width: 496px;
         line-height: 1.07;
         letter-spacing: 0.02em;
-        margin-bottom: 36px;
+        /*margin-bottom: 0;*/
         font-size: 56px;
     }
 
@@ -329,7 +329,7 @@ a {
     .main-title-name {
         max-width: 496px;
         line-height: 1.07;
-        margin-bottom: 48px;
+        /*margin-bottom: 0;*/
         font-size: 56px;
     }
     
@@ -993,7 +993,15 @@ a {
         flex-direction: row;
         align-items: baseline;
         justify-content: flex-start;
-        gap: 80px;
+        /*gap: 80px;*/
+    }
+
+    .footer-left {
+        margin-right: 120px;
+    }
+
+    .footer-icon-wrapper {
+        margin-right: 80px;
     }
 
     .footer-subscribe-wrapper {
