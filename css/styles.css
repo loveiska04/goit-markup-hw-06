@@ -176,13 +176,12 @@ a {
 .address-link {
     font-weight: 400;
     font-size: 12px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
     color: #434455;
     font-style: normal;
-    display: inline-block;
-    padding-top: 24px;
-    padding-bottom: 24px;
+    display: block;
+    padding: 0;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -193,11 +192,9 @@ a {
 
 @media (min-width: 768px) and (max-width: 1157px) {
     .address-link {
-        font-size: 16px;
-        line-height: 1.5;
-        letter-spacing: 0.02em;
-        padding-top: 24px;
-        padding-bottom: 24px;
+        font-size: 12px;
+        line-height: 1.17;
+        letter-spacing: 0.04em;
     }
     
     .address-list {
@@ -227,6 +224,15 @@ a {
 @media screen and (min-width: 1158px) {
     .header-logo {
         margin-right: 76px;
+    }
+}
+@media (min-width: 1158px) {
+    .address-link {
+        padding-top: 24px;
+        padding-bottom: 24px;
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
     }
 }
 
@@ -266,23 +272,6 @@ a {
     margin-bottom: 48px;
 }
 
-@media (min-width: 768px) {
-    .main-title-name {
-        max-width: 496px;
-        margin-bottom: 36px;
-        font-size: 56px;
-    }
-}
-
-@media (min-width: 1158px) {
-    .main-title-name {
-        max-width: 496px;
-        line-height: 1.07;
-        margin-bottom: 48px;
-        font-size: 56px;
-    }
-}
-
 .main-title-button {
     font-weight: 500;
     font-size: 16px;
@@ -311,17 +300,24 @@ a {
     .main-title-background {
         padding: 112px 0;
     }
-}
 
-.main-title-name {
-    font-style: 56px;
-    line-height: 1.07;
-    letter-spacing: 0.02em;
-    max-width: 496px;
-    margin-bottom: 36px;
+    .main-title-name {
+        max-width: 496px;
+        line-height: 1.07;
+        letter-spacing: 0.02em;
+        margin-bottom: 36px;
+        font-size: 56px;
+    }
 }
 
 @media screen and (min-width: 1158px) {
+    .main-title-name {
+        max-width: 496px;
+        line-height: 1.07;
+        margin-bottom: 48px;
+        font-size: 56px;
+    }
+    
     .main-title-background {
         padding: 188px 0;
     }
@@ -973,21 +969,15 @@ a {
         padding: 100px 0;
     }
 
-    .footer-left {
-        margin-right: 120px;
-    }
-
     .footer-container {
         display: flex;
-        padding-left: 15px;
         flex-direction: row;
         align-items: baseline;
         gap: 0;
     }
 
-    .footer-icon-wrapper {
-        margin-right: 120px;
-        margin-bottom: 0;
+    .footer-subscribe-wrapper {
+        margin-left: auto;
     }
 
     .footer-socials-box {
