@@ -993,7 +993,7 @@ a {
         flex-direction: row;
         align-items: baseline;
         justify-content: flex-start;
-        /*gap: 80px;*/
+        gap: 0;
     }
 
     .footer-left {
