@@ -997,6 +997,7 @@ a {
         display: flex;
         /*flex-direction: row;*/
         align-items: baseline;
+        /*align-items: center;*/
         /*justify-content: space-between;*/
         justify-content: flex-start;
         /*max-width: none;
